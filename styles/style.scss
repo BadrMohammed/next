@@ -1,0 +1,62 @@
+// Copy @each $breakpoint in map-keys($grid-breakpoints) {
+//   $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+//   $postfix: if($infix != "", $infix + "-down", "");
+
+//   @include media-breakpoint-down($breakpoint) {
+//     .modal-fullscreen#{$postfix} {
+//       width: 100vw;
+//       max-width: none;
+//       height: 100%;
+//       margin: 0;
+
+//       .modal-content {
+//         height: 100%;
+//         border: 0;
+//         @include border-radius(0);
+//       }
+
+//       .modal-header {
+//         @include border-radius(0);
+//       }
+
+//       .modal-body {
+//         overflow-y: auto;
+//       }
+
+//       .modal-footer {
+//         @include border-radius(0);
+//       }
+//     }
+//   }
+// }
+
+.pricingTable {
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  // padding: 30px;
+  border: 1px solid #33aeff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  height: 100%;
+}
+
+.pricingTable:after {
+  content: "";
+  background: #fff;
+  height: 165px;
+  width: 100%;
+  border-radius: 23px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.addbtn {
+  color: white;
+  background-color: #007bff;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  border: none;
+}
